@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.iamkaf.simplesort.mixin",
+  "package": "com.iamkaf.simpletidy.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
     "client.AbstractContainerScreenMixin"

@@ -1,7 +1,7 @@
-package com.iamkaf.simplesort.mixin.client;
+package com.iamkaf.simpletidy.mixin.client;
 
-import com.iamkaf.simplesort.network.SimpleSortNetwork;
-import com.iamkaf.simplesort.sort.SortMenuPolicy;
+import com.iamkaf.simpletidy.network.SimpleTidyNetwork;
+import com.iamkaf.simpletidy.sort.SortMenuPolicy;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.client.gui.screens.Screen;
@@ -30,14 +30,14 @@ public abstract class AbstractContainerScreenMixin extends Screen {
     }
 
     @Inject(method = "init", at = @At("TAIL"))
-    private void simpleSort$addSortButton(CallbackInfo callbackInfo) {
+    private void simpleTidy$addSortButton(CallbackInfo callbackInfo) {
         if (!SortMenuPolicy.supportsContainerSort(menu)) {
             return;
         }
 
-        Button button = Button.builder(Component.literal("↕"), ignored -> SimpleSortNetwork.sortContainer(menu.containerId))
+        Button button = Button.builder(Component.literal("↕"), ignored -> SimpleTidyNetwork.sortContainer(menu.containerId))
                 .bounds(leftPos + 178, topPos + 4, 18, 18)
-                .tooltip(Tooltip.create(Component.translatable("gui.simplesort.sort_container")))
+                .tooltip(Tooltip.create(Component.translatable("gui.simpletidy.sort_container")))
                 .build();
         addRenderableWidget(button);
     }

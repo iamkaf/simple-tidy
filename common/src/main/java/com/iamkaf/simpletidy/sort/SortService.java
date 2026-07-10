@@ -1,7 +1,7 @@
-package com.iamkaf.simplesort.sort;
+package com.iamkaf.simpletidy.sort;
 
-import com.iamkaf.simplesort.SimpleSort;
-import com.iamkaf.simplesort.network.SortContainerPayload;
+import com.iamkaf.simpletidy.SimpleTidy;
+import com.iamkaf.simpletidy.network.SortContainerPayload;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.Container;
@@ -67,10 +67,10 @@ public final class SortService {
             menu.broadcastChanges();
             if (rollbackFailure != null) {
                 commitFailure.addSuppressed(rollbackFailure);
-                SimpleSort.LOG.error("Container sort rollback failed", commitFailure);
+                SimpleTidy.LOG.error("Container sort rollback failed", commitFailure);
                 return SortResult.ROLLBACK_FAILED;
             }
-            SimpleSort.LOG.warn("Container sort failed and was rolled back", commitFailure);
+            SimpleTidy.LOG.warn("Container sort failed and was rolled back", commitFailure);
             return SortResult.ROLLED_BACK;
         }
     }
