@@ -23,7 +23,7 @@ const storageBlocks = [
   { block: "minecraft:hopper[enabled=false,facing=down]", screen: "net.minecraft.client.gui.screens.inventory.HopperScreen" },
 ] as const;
 
-describe("Simple Sort", () => {
+describe("Simple Tidy", () => {
   for (const storage of storageBlocks) {
     test(`sorts and compacts ${storage.block.split("[")[0]}`, async (ctx) => {
       await openAndActivateSort(ctx, storage.block, storage.screen);
@@ -44,7 +44,7 @@ describe("Simple Sort", () => {
 
   test("rejects sorting while the cursor carries a stack", async (ctx) => {
     const result = await ctx.scenario.run({
-      name: "simplesort-reject-carried-stack",
+      name: "simpletidy-reject-carried-stack",
       steps: [
         ...storageSetupSteps("minecraft:chest[facing=north]"),
         { action: "use_block", x: 0, y: 71, z: 0, direction: "up", hand: "main_hand" },
@@ -71,7 +71,7 @@ describe("Simple Sort", () => {
     let rejected = false;
     try {
       await ctx.scenario.run({
-        name: "simplesort-special-menu-has-no-sort-control",
+        name: "simpletidy-special-menu-has-no-sort-control",
         steps: [
           ...areaSetupSteps(),
           { action: "command", command: "/setblock 0 71 0 minecraft:anvil" },
@@ -92,7 +92,7 @@ describe("Simple Sort", () => {
 
 async function openAndActivateSort(ctx: TeaKitTestContext, block: string, screenClass: string) {
   const result = await ctx.scenario.run({
-    name: "simplesort-open-and-activate-sort-control",
+    name: "simpletidy-open-and-activate-sort-control",
     steps: [
       ...storageSetupSteps(block),
       { action: "use_block", x: 0, y: 71, z: 0, direction: "up", hand: "main_hand" },

@@ -1,11 +1,11 @@
-package com.iamkaf.simplesort.fabric;
+package com.iamkaf.simpletidy.fabric;
 
-import com.iamkaf.simplesort.SimpleSortMod;
+import com.iamkaf.simpletidy.SimpleTidyMod;
 import net.fabricmc.api.ModInitializer;
 
 public final class FabricEntrypoint implements ModInitializer {
     @Override
     public void onInitialize() {
-        SimpleSortMod.init();
+        SimpleTidyMod.init();
     }
 }

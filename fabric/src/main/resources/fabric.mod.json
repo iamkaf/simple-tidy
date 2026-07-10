@@ -8,13 +8,13 @@
     "${mod_author}"
   ],
   "contact": {
-    "sources": "https://github.com/iamkaf/simple-sort"
+    "sources": "https://github.com/iamkaf/simple-tidy"
   },
   "license": "${license}",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.iamkaf.simplesort.fabric.FabricEntrypoint"
+      "com.iamkaf.simpletidy.fabric.FabricEntrypoint"
     ]
   },
   "mixins": [

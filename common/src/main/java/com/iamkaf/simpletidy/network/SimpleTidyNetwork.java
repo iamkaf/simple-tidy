@@ -1,13 +1,13 @@
-package com.iamkaf.simplesort.network;
+package com.iamkaf.simpletidy.network;
 
 import com.iamkaf.amber.api.networking.v1.NetworkChannel;
-import com.iamkaf.simplesort.SimpleSort;
+import com.iamkaf.simpletidy.SimpleTidy;
 
-public final class SimpleSortNetwork {
-    private static final NetworkChannel CHANNEL = NetworkChannel.create(SimpleSort.resource("main"));
+public final class SimpleTidyNetwork {
+    private static final NetworkChannel CHANNEL = NetworkChannel.create(SimpleTidy.resource("main"));
     private static boolean initialized;
 
-    private SimpleSortNetwork() {
+    private SimpleTidyNetwork() {
     }
 
     public static synchronized void init() {

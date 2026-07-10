@@ -1,13 +1,13 @@
-package com.iamkaf.simplesort.neoforge;
+package com.iamkaf.simpletidy.neoforge;
 
-import com.iamkaf.simplesort.SimpleSort;
-import com.iamkaf.simplesort.SimpleSortMod;
+import com.iamkaf.simpletidy.SimpleTidy;
+import com.iamkaf.simpletidy.SimpleTidyMod;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 
-@Mod(SimpleSort.MOD_ID)
+@Mod(SimpleTidy.MOD_ID)
 public final class NeoForgeEntrypoint {
     public NeoForgeEntrypoint(IEventBus eventBus) {
-        SimpleSortMod.init();
+        SimpleTidyMod.init();
     }
 }
