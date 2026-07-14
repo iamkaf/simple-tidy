@@ -11,6 +11,7 @@
     "sources": "https://github.com/iamkaf/simple-tidy"
   },
   "license": "${license}",
+  "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
