@@ -8,14 +8,14 @@
     "${mod_author}"
   ],
   "contact": {
-    "sources": "https://github.com/iamkaf/simple-tidy"
+    "sources": "https://github.com/iamkaf/minisort"
   },
   "license": "${license}",
   "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.iamkaf.simpletidy.fabric.FabricEntrypoint"
+      "com.iamkaf.minisort.fabric.FabricEntrypoint"
     ]
   },
   "mixins": [

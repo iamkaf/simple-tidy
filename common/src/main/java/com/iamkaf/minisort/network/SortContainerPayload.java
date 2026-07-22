@@ -1,10 +1,10 @@
-package com.iamkaf.simpletidy.network;
+package com.iamkaf.minisort.network;
 
 import com.iamkaf.amber.api.networking.v1.Packet;
 import com.iamkaf.amber.api.networking.v1.PacketDecoder;
 import com.iamkaf.amber.api.networking.v1.PacketEncoder;
 import com.iamkaf.amber.api.networking.v1.PacketHandler;
-import com.iamkaf.simpletidy.sort.SortService;
+import com.iamkaf.minisort.sort.SortService;
 import net.minecraft.server.level.ServerPlayer;
 
 public record SortContainerPayload(int containerId, SortTarget target, SortMode mode)

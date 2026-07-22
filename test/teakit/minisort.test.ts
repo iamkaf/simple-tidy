@@ -25,7 +25,7 @@ const storageBlocks = [
   { block: "minecraft:hopper[enabled=false,facing=down]", screen: "net.minecraft.client.gui.screens.inventory.HopperScreen" },
 ] as const;
 
-describe("Simple Tidy", () => {
+describe("minisort", () => {
   for (const storage of storageBlocks) {
     test(`sorts and compacts ${storage.block.split("[")[0]}`, async (ctx) => {
       await openAndActivateSort(ctx, storage.block, storage.screen);

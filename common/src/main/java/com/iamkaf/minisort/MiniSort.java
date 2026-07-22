@@ -1,4 +1,4 @@
-package com.iamkaf.simpletidy;
+package com.iamkaf.minisort;
 
 //? if >=1.21.11 {
 import net.minecraft.resources.Identifier;
@@ -8,12 +8,12 @@ import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public final class SimpleTidy {
-    public static final String MOD_ID = "simpletidy";
-    public static final String MOD_NAME = "Simple Tidy";
+public final class MiniSort {
+    public static final String MOD_ID = "minisort";
+    public static final String MOD_NAME = "minisort";
     public static final Logger LOG = LoggerFactory.getLogger(MOD_NAME);
 
-    private SimpleTidy() {
+    private MiniSort() {
     }
 
 //? if >=1.21.11 {

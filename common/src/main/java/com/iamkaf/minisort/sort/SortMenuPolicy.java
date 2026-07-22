@@ -1,4 +1,4 @@
-package com.iamkaf.simpletidy.sort;
+package com.iamkaf.minisort.sort;
 
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ChestMenu;
